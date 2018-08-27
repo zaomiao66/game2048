@@ -1,0 +1,395 @@
+.GameHome{
+    width: 500px;
+    margin: 0 auto 0 auto;
+}
+body{
+    margin: 80px;
+    /* background: #faf8ef; */
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    color: #776e65;
+    background: url('../au/heliu.jpg');
+    background-size: auto;
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        /* margin: 35px 67px 0 67px; */
+        width: 375px;
+       margin: 0 auto;
+        /*padding: 20px;*/
+        background: url('../au/xingkong.jpeg');
+        background-size: auto;
+        position: fixed;
+        top:0px;
+        bottom:0px;
+        height: 100%;
+    }
+    h1.title {
+        font-size: 80px;
+        font-weight: bold;
+        margin: 0;
+        display: block;
+        float: left; 
+        color: white;
+    }
+    .GameHome {
+        position: fixed;
+        top:10px;
+        margin-top: 100px;
+        width: 375px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .IntroductionBoard{
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        margin:0 auto ;
+        color: white;
+    }
+
+    .heading {
+        margin-bottom: 10px;
+    }
+    h1.title {
+        font-size: 35px;
+        margin-top: 15px;
+    }
+    .scores, .bestScore {
+        margin-top: 9px;
+        font-size: 15px;
+        padding: 8px 11px;
+        min-width: 44px;
+    }
+    /* .scores:after, .bestScore:after {
+        top: 9px;
+        font-size: 12px;
+        line-height: 10px; 
+    }
+    .scores .score-addition, .bestScore .score-addition {
+        right: 32px;
+        font-size: 20px;
+        line-height: 25px;
+    } */
+
+    .score_container_1 {
+        display: flex;
+        width:160;
+        flex-direction: column;
+        margin-left: 125px;
+    }
+
+    .score_1 {
+        font-size: 20px;
+        line-height: 47px;
+        font-weight: bold;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        text-align: center;
+        background: none;
+        /* margin-left:30px; */
+    }
+
+    .scoreNow {
+        width: 80px;
+        font-size: 25px;
+        line-height: 47px;
+        font-weight: bold;
+        border-radius: 5px;
+        color: white;
+        margin-top: 8px;
+        text-align: center;
+        margin-left:30px;
+        background: none;
+    }
+
+    .IntroductionBoardBottom{
+        display: flex;
+        clear: both;
+    }
+    .gameIntroduction {
+        width: 200px;
+        font-size: 8px;
+        display: flex;
+        box-sizing: border-box;
+        line-height: 1.5;
+    }
+    .restart {
+        width: 80px;
+        font-size: 16px;
+        padding: 0;
+        display: block;
+        box-sizing: border-box;
+        margin-top: 4px;
+        /* float: right; */
+        margin-left: 65px;
+        /* background: none; */
+    }
+    .GameBoard {
+        /* margin-top: 17px; */
+        width: 350px;
+        height: 350px;
+        font-size: 31px;
+        /* margin: 17 auto; */
+        margin-left: auto;
+        margin-right: auto;
+        background: none;
+    }
+
+    .num0 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 25px;
+    }
+    .num2 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num2Appear0 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num2Appear1 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num4 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num4Combine0 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num4Combine1 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num4Appear0 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num4Appear1 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num8 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num8Combine0 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num8Combine1 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+
+    .num16 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num16Combine0 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num16Combine1 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num32 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num32Combine0 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num32Combine1 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num64 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num64Combine0 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num64Combine1 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num128 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num128Combine0{
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num128Combine1{
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num256 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num256Combine0{
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num256Combine1{
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num512 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num512Combine0 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num512Combine1 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num1024 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num1024Combine0 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num1024Combine1 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num2048 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num2048Combine0 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+    .num2048Combine1 {
+        height: 75px;
+        width: 75px;
+        margin: 10px 0 0 10px;
+        border-radius: 6px;
+        font-size: 36px;
+    }
+}

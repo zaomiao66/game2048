@@ -1,0 +1,687 @@
+.GameBoard{
+    margin-top: 35px;
+    position: relative;
+    cursor: default;
+    -webkit-box-sizing: border-box;
+    /* background: #bbada0; */
+    width: 500px;
+    height: 500px;    
+    border-radius: 6px;
+    background: none;
+}
+
+.num0{
+    background: rgba(238, 228, 218, 0.73);
+    color: rgb(225, 213, 202);
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+@-webkit-keyframes 'numBlink' {
+    from {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+    50% {
+        opacity: 0.9;
+        -webkit-transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes 'numBlinkChange' {
+    from {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+    50% {
+        opacity: 0.9;
+        -webkit-transform: scale(1.1);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes numAppear2and4 {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.6);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+@-webkit-keyframes numAppear2and4_2 {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.6);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+
+
+
+
+.num2{
+    background: #eee4da;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    /*padding: auto 0 0 0;*/
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.num2Appear0{
+    background: #eee4da;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    /*padding: auto 0 0 0;*/
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation: numAppear2and4 0.5s ease-in-out;
+    animation: numAppear2and4 0.5s ease-in-out;
+    /* -webkit-animation-name: numAppear; */
+    /* -webkit-animation-duration: 0.5s; */
+    -webkit-animation-iteration-count: 1;
+    animation-fill-mode: none;
+     -webkit-animation-fill-mode: none;
+}
+
+.num2Appear1{
+    background: #eee4da;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    /*padding: auto 0 0 0;*/
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation: numAppear2and4_2 0.5s ease-in-out;
+    animation: numAppear2and4_2 0.5s ease-in-out;
+    /* -webkit-animation-name: numAppear; */
+    /* -webkit-animation-duration: 0.5s; */
+    -webkit-animation-iteration-count: 1;
+    animation-fill-mode: none;
+     -webkit-animation-fill-mode: none;
+}
+
+.num4{
+    background: #ede0c8;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    /*padding: auto 0 0 0;*/
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.num4Appear0{
+    background: #ede0c8;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    /*padding: auto 0 0 0;*/
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numAppear2and4;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.num4Appear1{
+    background: #ede0c8;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    /*padding: auto 0 0 0;*/
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numAppear2and4_2;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.num4Combine0{
+    background: #ede0c8;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    /*padding: auto 0 0 0;*/
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlink;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.num4Combine1{
+    background: #ede0c8;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    /*padding: auto 0 0 0;*/
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlinkChange;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.num8{
+    color: #f9f6f2;
+    background: #f2b179;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    /*padding: auto 0 0 0;*/
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.num8Combine0{
+    color: #f9f6f2;
+    background: #f2b179;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    /*padding: auto 0 0 0;*/
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlink;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.num8Combine1{
+    color: #f9f6f2;
+    background: #f2b179;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    /*padding: auto 0 0 0;*/
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlinkChange;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.num16{
+    color: #f9f6f2;
+    background: #f59563;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.num16Combine0{
+    color: #f9f6f2;
+    background: #f59563;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlink;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.num16Combine1{
+    color: #f9f6f2;
+    background: #f59563;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlinkChange;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.num32{
+    color: #f9f6f2;
+    background: #f67c5f;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.num32Combine0{
+    color: #f9f6f2;
+    background: #f67c5f;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlink;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.num32Combine1{
+    color: #f9f6f2;
+    background: #f67c5f;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlinkChange;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+.num64{
+    color: #f9f6f2;
+    background: #f65e3b;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.num64Combine1{
+    color: #f9f6f2;
+    background: #f65e3b;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlinkChange;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.num64Combine0{
+    color: #f9f6f2;
+    background: #f65e3b;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlink;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.num128{
+    color: #f9f6f2;
+    background: #edcf72;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.num128Combine0{
+    color: #f9f6f2;
+    background: #edcf72;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlink;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 2;
+}
+
+.num128Combine1{
+    color: #f9f6f2;
+    background: #edcf72;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlinkChange;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 2;
+}
+
+.num256{
+    color: #f9f6f2;
+    background: #edcc61;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.num256Combine0{
+    color: #f9f6f2;
+    background: #edcc61;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlink;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 2;
+}
+
+.num256Combine1{
+    color: #f9f6f2;
+    background: #edcc61;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 1.99;
+    font-size: 55px;
+    font-weight: bold;
+    -webkit-animation-name: numBlinkChange;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 2;
+}
+
+.num512{
+    color: #f9f6f2;
+    background: #edc850;
+    font-size: 45px;
+    line-height: 2.3;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+}
+
+.num512Combine0{
+    color: #f9f6f2;
+    background: #edc850;
+    font-size: 45px;
+    line-height: 2.3;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation-name: numBlink;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 2;
+}
+
+.num512Combine1{
+    color: #f9f6f2;
+    background: #edc850;
+    font-size: 45px;
+    line-height: 2.3;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation-name: numBlinkChange;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 2;
+}
+
+.num1024{
+    color: #f9f6f2;
+    background: #edc53f;
+    font-size: 35px;
+    line-height: 2.9;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+}
+
+.num1024Combine0{
+    color: #f9f6f2;
+    background: #edc53f;
+    font-size: 35px;
+    line-height: 2.9;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation-name: numBlink;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 2;
+}
+
+
+.num1024Combine1{
+    color: #f9f6f2;
+    background: #edc53f;
+    font-size: 35px;
+    line-height: 2.9;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation-name: numBlinkChange;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 2;
+}
+.num2048{
+    color: #f9f6f2;
+    background: #edc22e;
+    font-size: 35px;
+    line-height: 2.9;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+}
+
+.num2048Combine0{
+    color: #f9f6f2;
+    background: #edc22e;
+    font-size: 35px;
+    line-height: 2.9;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation-name: numBlink;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 3;
+}
+
+.num2048Combine1{
+    color: #f9f6f2;
+    background: #edc22e;
+    font-size: 35px;
+    line-height: 2.9;
+    float: left;
+    margin: 14.4px 0 0 14.4px;
+    border-radius: 10px;
+    height: 107px;
+    width: 107px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation-name: numBlinkChange;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 3;
+}
